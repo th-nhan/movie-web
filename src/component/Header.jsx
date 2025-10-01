@@ -2,7 +2,7 @@ import { FaSearch, FaSortDown } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 
 
-const Header = () => {
+const Header = ({ onLoginClick, onRegisterClick }) => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -51,11 +51,14 @@ const Header = () => {
                 </nav>
 
                 <nav className="flex items-center space-x-4">
-                    <button className="h-12 w-32 px-4 bg-red-700 rounded-lg hover:animate-shake">Đăng ký</button>
+                    <button onClick={onRegisterClick} className="h-12 w-32 px-4 bg-red-700 rounded-lg hover:animate-shake">Đăng ký</button>
                 </nav>
 
                 <nav className="flex items-center space-x-4">
-                    <button className="h-12 w-32 px-4 bg-red-700 rounded-lg  hover:animate-shake ">Đăng nhập</button>
+                    <button onClick={onLoginClick} 
+                        className="h-12 w-32 px-4 bg-red-700 rounded-lg  hover:animate-shake">
+                            Đăng nhập
+                    </button>
                 </nav>
 
             </div>

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'banner' : 'url(/banner.jpg)'
+        'banner' : 'url(/banner.jpg)',
+        'login' : 'url(/moviebanners/unnamed.png)',
       },
       keyframes: {
         shake: {
