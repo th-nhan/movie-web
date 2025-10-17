@@ -90,7 +90,7 @@ const Banner = () => {
 
       </Swiper>
 
-      <div className="absolute bottom-20 right-10 w-[50%] z-20 ">
+      <div className="absolute bottom-10 right-10 w-[50%] z-20 ">
         <Swiper
         onSwiper={setThumbsSwiper}
         modules={[Thumbs]}

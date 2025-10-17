@@ -3,7 +3,7 @@
 const Login = ({ onClose }) => {
     const handleOverlayClick = (e) => {
         if (e.target === e.currentTarget) {
-            onCloseLogin();
+            onClose();
         }
     }
   return (
