@@ -14,8 +14,8 @@ const Header = ({ onLoginClick, onRegisterClick }) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return (
-        <div className={`p-4 flex items-center justify-between text-white top-0 left-0 w-full z-50 fixed
-        transition-all duration-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
+        <div className={`p-4 flex items-center justify-between text-white top-0 left-0  w-full z-50 fixed
+            transition-all duration-800 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="flex items-center space-x-4">
                 <h1 className="text-[30px] uppercase font-bold text-red-700 pr-4    ">
                     Làng Phim

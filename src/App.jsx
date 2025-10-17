@@ -56,7 +56,7 @@ function App() {
   
   return (
     <>
-      <div className='bg-black/90 pb-10'>
+      <div className='bg-black/90 pb-10 overflow-hidden'>
         <Header onLoginClick={handleLoginOpen} onRegisterClick={handleRegisterOpen} />
         <Banner/>
         <Chude/>
