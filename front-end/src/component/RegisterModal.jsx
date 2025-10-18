@@ -77,7 +77,7 @@ const RegisterModal = ({ onClose }) => {
     }
     return (
         <div onClick={handleOverlayClick} className='fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50'>
-            <div className="w-[800px] h-[600px] bg-white rounded-lg flex">
+            <div className="w-[800px] h-[650px] bg-white rounded-lg flex">
                 <div className="bg-login w-[400px] h-full relative bg-cover bg-center rounded-l-lg">
                     <div className="absolute bottom-8 left-8">
                         <h1 className='text-white text-4xl font-extrabold '>LÀNG PHIM</h1>
