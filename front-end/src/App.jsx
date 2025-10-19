@@ -5,6 +5,8 @@ import Chude from './component/Chude'
 import Login from './component/LoginModal'
 import MoviesList from './component/MoviesList'
 import RegisterModal from './component/RegisterModal'
+import Footer from './component/Footer'
+
 
 function App() {
   const [movie, setMovie] = useState([])
@@ -51,7 +53,7 @@ function App() {
   const handleRegisterClose = () => setRegisterOpen(false)
 
   return (
-    <div className='bg-black/90 pb-10'>
+    <div className='bg-black/90 overflow-x-hidden '>
       <Header onLoginClick={handleLoginOpen} onRegisterClick={handleRegisterOpen} />
       <Banner />
       <Chude />
@@ -59,6 +61,7 @@ function App() {
       <MoviesList title="Phim mới" data={movieRated} />
       {loginOpen && <Login onClose={handleLoginClose} />}
       {registerOpen && <RegisterModal onClose={handleRegisterClose} />}
+      <Footer onRegisterClick={handleRegisterOpen} />
     </div>
   )
 }

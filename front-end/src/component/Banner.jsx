@@ -53,7 +53,7 @@ const Banner = () => {
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/50 to-transparent "></div>
-              <div className="w-full h-full flex items-center justify-center space-x-[30px] p-4 relative z-10">
+              <div className="w-full h-full flex items-center justify-center space-x-[30px] p-4 ml-8 relative z-10">
                 <div className="flex flex-col space-y-5 items-baseline w-[50%] absolute left-4">
                   <p className="text-white text-xl py-2 px-4 bg-gradient-to-r from-red-700 to-white">
                     Phim bộ mới
