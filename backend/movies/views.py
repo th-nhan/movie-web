@@ -6,7 +6,12 @@ from .serializers import MovieSerializers
 
 class MovieList(APIView):
     def get(self, request):
-        movies = Movie.objects.all()
+        tag_name = request.query_params.get('tag')
+        if tag_name:
+            movies = Movie.objects.filter(tags__icontains=[tag_name])
+        else:
+            movies = Movie.objects.all()
+
         serializer = MovieSerializers(movies, many=True, context={'request': request})
         return Response(serializer.data)
 
@@ -16,6 +21,7 @@ class MovieList(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 class MovieDetail(APIView):
     def get_object(self, pk):

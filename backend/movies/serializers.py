@@ -16,3 +16,5 @@ class MovieSerializers(serializers.ModelSerializer):
     def get_thumb(self, obj):
         request = self.context.get('request')
         return request.build_absolute_uri(obj.thumb.url) if obj.thumb else None
+
+

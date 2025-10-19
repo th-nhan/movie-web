@@ -31,7 +31,6 @@ function App() {
             : `http://127.0.0.1:8000${item.thumb}`,
         }));
 
-        // Chia làm 2 phần
         const half = Math.ceil(updated.length / 2);
         setMovie(updated.slice(0, half));
         setMovieRated(updated.slice(half));
