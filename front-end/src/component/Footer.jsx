@@ -8,9 +8,12 @@ const Footer = ({onRegisterClick}) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   return (
-    <div className="h-[500px] w-full mt-60 bg-black/10 relative">
+    <div className="h-[600px] w-full mt-60 
+    bg-gradient-to-b from-black/10 to-black/90 
+    relative ">
       <div className="flex flex-col items-center justify-center relative">
-        <div className="bg-red-700 h-[250px] w-[500px] rounded-2xl absolute -top-20 shadow-2xl  flex-col items-center justify-center">
+        <div className="bg-red-700 h-[250px] w-[500px] rounded-2xl
+         absolute -top-20 shadow-2xl  flex-col items-center justify-center">
           <div className="p-10 pb-0">
             <h1 className="text-[40px] uppercase font-bold text-white">
               Làng Phim
@@ -42,9 +45,9 @@ const Footer = ({onRegisterClick}) => {
           </div>
         </div>
       </div>
-      <div className=" absolute bottom-20 w-full h-[200px] 
+      <div className=" absolute bottom-40 w-full h-[200px] 
            text-white text-lg font-medium flex text-[16px]
-          flex-col justify-center items-center  space-y-4 pt-2 ">
+          flex-col justify-center items-center  space-y-4 ">
         <p className=" hover:text-red-700">Giới thiệu</p>
         <p className=" hover:text-red-700">Điều khoản sử dụng</p>
         <p className=" hover:text-red-700">Chính sách bảo mật</p>
@@ -53,7 +56,7 @@ const Footer = ({onRegisterClick}) => {
 
       </div>
 
-      <div className=" absolute bottom-0 flex flex-col items-center text-center w-[300px] 
+      <div className=" absolute bottom-16 flex flex-col items-center text-center w-[300px] 
       p-2 text-[16px] left-1/2 -translate-x-1/2 rounded-2xl
       justify-center text-white bg-red-700 ">
         <DarkVeil

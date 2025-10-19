@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Header from './component/Header'
+import Header2 from './component/Header2'
 import Banner from './component/Banner'
 import Chude from './component/Chude'
 import Login from './component/LoginModal'
@@ -8,7 +8,7 @@ import RegisterModal from './component/RegisterModal'
 import Footer from './component/Footer'
 
 
-function App() {
+function App2() {
   const [movie, setMovie] = useState([])
   const [movieRated, setMovieRated] = useState([])
   const [loginOpen, setLoginOpen] = useState(false)
@@ -54,8 +54,8 @@ function App() {
   const handleRegisterClose = () => setRegisterOpen(false)
 
   return (
-    <div className='bg-black/90 overflow-x-hidden '>
-      <Header onLoginClick={handleLoginOpen} onRegisterClick={handleRegisterOpen} />
+    <div className='bg-black/90 overflow-x-hidden'>
+      <Header2 onLoginClick={handleLoginOpen} onRegisterClick={handleRegisterOpen} />
       <Banner />
       <Chude />
       <MoviesList title="Phim nổi bật" data={movie} />
@@ -67,4 +67,4 @@ function App() {
   )
 }
 
-export default App
+export default App2
